@@ -1,0 +1,770 @@
+/* Master styles*/
+/* ---------------------------------------------------*/
+html {
+    width:100%;
+    height:auto;
+    min-height:100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: hsl(0, 0%, 93%);
+    background-image: url(images/cone-small.png);
+    background-repeat: no-repeat;
+    background-position: bottom right ;
+    background-size: 15%;
+}
+
+body {
+    font-family: "lato", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    height:auto;
+    min-height:100%;
+    padding-bottom: 100px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* TOP NAV BAR */
+/* ---------------------------------------------------*/
+
+.nav-wrapper {
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px hsl(0, 0%, 71%);
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+    background-color: #d1d1d1;
+}
+
+li, a, button {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    text-shadow: 1px 1px #0000001a;
+
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 8%;
+}
+
+.rightlogo{
+    margin-right: auto;
+}
+
+.rightlogo img{
+    filter: saturate(0);
+    -webkit-filter: saturate(0);
+}
+
+.rightlogo img:hover{
+    filter: saturate(100%);
+    -webkit-filter: saturate(100%);
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    line-height: 20px;
+}
+
+.nav__links li a:hover {
+    color: rgb(255, 136, 0);
+    font-style: italic;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(255, 136, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: rgb(211, 112, 0);
+    transform: scale(1.1);
+    font-size: 20px;
+}
+
+/*Header*/
+/*-------------------------------------------------------*/
+.titles-home {
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 85%);
+    width:100%;
+    height:283px;
+    box-shadow: 5px 5px 5px hsl(0, 0%, 71%);
+    margin-bottom: 10px;
+}
+.samll-title-home h2 {
+    color: rgb(255, 136, 0);
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    width: 100%;
+    padding-top: 15px;
+    font-style: italic;
+}
+
+.big-title-home h1 {
+    font-family: 'PT Serif', serif;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 4px;
+    width: 100%;
+    margin-top: 15px;
+}
+.icon-bar {
+    position: relative;
+    width: 100%;
+    margin-bottom: -240px;
+    margin-left: auto;
+    margin-top: 195px;
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.062);
+}
+
+.icon-bar a {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    color: white;
+
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+.github {
+    background: #00000023;
+    color: white;
+}
+
+.twitter {
+    background: #00000023;
+    color: white;
+    }
+
+.google {
+    background: #00000023;
+    color: white;
+}
+
+.linkedin {
+    background: #00000023;
+    color: white;
+}
+
+
+/* LINK IMAGES HOME */
+/* ---------------------------------------------------*/
+
+.content-wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.portfolio-img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+}
+  
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight:  600;
+    color: white;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%)
+}
+
+/* footer */
+/* ---------------------------------------------------*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #d1d1d1;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+.foot-link {
+    list-style: none;
+    text-align: center;
+}
+
+.foot-link li {
+    display: inline-block;
+}
+
+.foot-link li a {
+    list-style: none;
+    font-size: 12px;
+    border-left: 2px solid rgba(49, 49, 49, 0.192);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.foot-link li a:last-child {
+    border-right: 2px solid rgba(49, 49, 49, 0.192);
+}
+
+.foot-link li a:hover {
+    color: rgb(255, 136, 0);
+}
+
+/* ABOUT PAGE */
+/* ---------------------------------------------------*/
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0px;
+}
+
+.profile-image-wrapper {
+    position: relative;
+}
+
+.profile-image-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.profile-content-wrapper {
+    padding-left: 20px;
+    background-color: hsla(0, 0%, 45%, 0.116);;
+}
+
+.profile-content-wrapper h1 {
+    color: rgb(255, 136, 0);
+}
+.profile-content-wrapper p  {
+    font-size: 18px ;
+}
+
+/* MATH - CMPUT - PHYS 
+/* ---------------------------------------------------*/
+.titles {
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px hsl(0, 0%, 81%); 
+    background-color: hsl(0, 0%, 85%);
+    width:100%;
+    height:200px;
+}
+
+.samll-title h2 {
+    color: rgb(255, 136, 0);
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    width: 100%;
+    padding-top: 40px;
+    font-style: italic;
+}
+
+.big-title h1 {
+    font-family: 'PT Serif', serif;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 4px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.nav-bar {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px hsl(0, 0%, 81%); 
+    background-color: hsl(0, 0%, 85%);
+    height:auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.nav-bar-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-bar-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-bar-links li a {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.nav-bar-links li a:hover {
+    color: rgb(255, 136, 0);
+    font-style: italic;
+}
+
+.sub-title {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px hsla(0, 0%, 81%, 0.534); 
+    height:20;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    padding-bottom: 20px;
+}
+.sub-big-title h2 {
+    display: inline;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-family: 'Prompt', sans-serif;
+    padding-right: 10px;
+    color: rgb(255, 136, 0);
+}
+
+.sub-big-title span  {
+    float: auto;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-family: 'Prompt', sans-serif;
+} 
+
+.top-projects {
+    margin-top: 80px;
+}
+
+.two-column-wrapper-2{
+    margin-top: 40px;
+}
+
+/* PROJECT - ALL 
+/* ---------------------------------------------------*/
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 200px;
+    grid-gap: 0px;
+    margin-top: 10px;
+}
+
+.project-image {
+    position: relative;
+    margin-left: auto;
+    width: 200px;
+    height: 200px;
+    left: -150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+    box-shadow: 2px 2px 5px hsl(0, 0%, 71%);  
+}
+
+.project-text {
+    position: relative;
+    height: 200px;
+    width: 500px;
+    right: 150px;
+    background-color: hsla(0, 0%, 70%, 0.116);
+    box-shadow: 2px 2px 5px hsl(0, 0%, 71%);
+}
+div.project-text:hover {
+    background-color: rgba(44, 44, 44, 0.123);
+    cursor: pointer;
+}
+
+/* PROJECT - MATH 
+/* ---------------------------------------------------*/
+.the-text-math {
+    margin: 15px;
+}
+
+.the-text-math h1 {
+    color: rgb(189, 59, 59);
+    font-size: 12px;
+    padding-right: 10px;
+    margin-bottom: 1px;
+}
+
+.the-text-math h2 {
+    margin: 0;
+}
+
+.the-text-math h2 {
+    color: rgb(39, 39, 39);
+    font-size: 20px;
+    margin: 0;
+}
+
+.the-text-math h2:hover{
+    color: rgb(189, 59, 59);
+}
+
+.the-text-math h3 {
+    color: rgba(39, 39, 39, 0.39);
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.the-text-math p {
+    color: rgb(10, 10, 10);
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.the-text-math h4 {
+    color: rgba(39, 39, 39, 0.39);
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.the-text-math h4:hover {
+    color: rgb(189, 59, 59);
+}
+
+/* PROJECT - CMPUT 
+/* ---------------------------------------------------*/
+.the-text-cmput {
+    margin: 15px;
+}
+
+.the-text-cmput h1 {
+    color: rgb(20, 16, 214);
+    font-size: 12px;
+    padding-right: 10px;
+    margin-bottom: 1px;
+}
+
+.the-text-cmput h2 {
+    margin: 0;
+}
+
+.the-text-cmput h2 {
+    color: rgb(39, 39, 39);
+    font-size: 20px;
+    margin: 0;
+}
+
+.the-text-cmput h2:hover{
+    color: rgb(20, 16, 214);
+}
+
+.the-text-cmput h3 {
+    color: rgba(39, 39, 39, 0.39);
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.the-text-cmput h4 {
+    color: rgba(39, 39, 39, 0.39);
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.the-text-cmput h4:hover {
+    color: rgb(20, 16, 214);
+}
+
+.the-text-cmput p {
+    color: rgb(10, 10, 10);
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+/* PROJECT - PHYS 
+/* ---------------------------------------------------*/
+.the-text-phys {
+    margin: 15px;
+}
+
+.the-text-phys h1 {
+    color: rgb(255, 136, 0);
+    font-size: 12px;
+    padding-right: 10px;
+    margin-bottom: 1px;
+}
+
+.the-text-phys h2 {
+    margin: 0;
+}
+
+.the-text-phys h2 {
+    color: rgb(39, 39, 39);
+    font-size: 20px;
+    margin: 0;
+}
+
+.the-text-phys h2:hover{
+    color: rgb(255, 136, 0);
+}
+
+.the-text-phys h3 {
+    color: rgba(39, 39, 39, 0.39);
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.the-text-phys h4 {
+    color: rgba(39, 39, 39, 0.39);
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.the-text-phys h4:hover {
+    color: rgb(255, 136, 0);
+}
+
+.the-text-phys p {
+    color: rgb(10, 10, 10);
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+
+/* Problem - ALL 
+/* ---------------------------------------------------*/
+.problem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 100px;
+    grid-gap: 0px;
+    margin-top: 15px;
+}
+
+.problem-image {
+    position: relative;
+    margin-left: auto;
+    width: 200px;
+    height: 100px;
+    left: -150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+    box-shadow: 2px 2px 5px hsl(0, 0%, 71%);  
+}
+
+.problem-text {
+    position: relative;
+    height: 100px;
+    width: 500px;
+    right: 150px;
+    background-color: hsla(0, 0%, 70%, 0.116);
+    box-shadow: 2px 2px 5px hsl(0, 0%, 71%);
+}
+div.problem-text:hover {
+    background-color: rgba(44, 44, 44, 0.123);
+    cursor: pointer;
+}
+
+/* problem All - MATH 
+/* ---------------------------------------------------*/
+.the-text-math-problem {
+    margin: 15px;
+}
+
+.the-text-math-problem h1 {
+    color: rgb(189, 59, 59);
+    font-size: 11px;
+    padding-right: 10px;
+    margin-bottom: 1px;
+    margin-top: 0px;
+}
+
+.the-text-math-problem h2 {
+    margin: 0;
+}
+
+.the-text-math-problem h2 {
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+    margin: 0;
+}
+
+.the-text-math-problem h2:hover{
+    color: rgb(189, 59, 59);
+}
+
+.the-text-math-problem h3 {
+    color: rgba(39, 39, 39, 0.39);
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/* problem All - phys 
+/* ---------------------------------------------------*/
+.the-text-phys-problem {
+    margin: 15px;
+}
+
+.the-text-phys-problem h1 {
+    color: rgb(255, 136, 0);
+    font-size: 11px;
+    padding-right: 10px;
+    margin-bottom: 1px;
+    margin-top: 0px;
+}
+
+.the-text-phys-problem h2 {
+    margin: 0;
+}
+
+.the-text-phys-problem h2 {
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+    margin: 0;
+}
+
+.the-text-phys-problem h2:hover{
+    color: rgb(255, 136, 0);
+}
+
+.the-text-phys-problem h3 {
+    color: rgba(39, 39, 39, 0.39);
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/* problem All - cmput 
+/* ---------------------------------------------------*/
+.the-text-cmput-problem {
+    margin: 15px;
+}
+
+.the-text-cmput-problem h1 {
+    color: rgb(20, 16, 214);
+    font-size: 11px;
+    padding-right: 10px;
+    margin-bottom: 1px;
+    margin-top: 0px;
+}
+
+.the-text-cmput-problem h2 {
+    margin: 0;
+}
+
+.the-text-cmput-problem h2 {
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+    margin: 0;
+}
+
+.the-text-cmput-problem h2:hover{
+    color: rgb(20, 16, 214);
+}
+
+.the-text-cmput-problem h3 {
+    color: rgba(39, 39, 39, 0.39);
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*contact info*/
+/* ---------------------------------------------------*/
+.contact-info-contaner {
+    position: relative;
+    width: 100%;
+    background-color: hsla(0, 1%, 66%, 0.226);
+    box-shadow: 2px 2px 5px hsl(0, 0%, 71%);
+    margin-top: 20px;
+}
+.contact-info-contaner h1 {
+    text-align: center;
+}
+
+.icon-bar-2 {
+    position: relative;
+    width: 100%;
+    margin-bottom: -240px;
+    margin-left: auto;
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.062);
+}
+
+.icon-bar-2 a {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    color: white;
+
+}
+
+.icon-bar-2 a:hover {
+    background-color: #000;
+    transform: scale(1.1);
+}
